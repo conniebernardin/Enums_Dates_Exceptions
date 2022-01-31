@@ -20,7 +20,4 @@ public class Exercise4 {
         System.out.println("100 days after my birthday is: " + oneHundredDays);
 
     }
-    private int calculateAge(LocalDate date){
-        
-    }
 }
