@@ -18,6 +18,6 @@ public class Exercise4 {
 
         LocalDate oneHundredDays = myBirthday.plusDays(100);
         System.out.println("100 days after my birthday is: " + oneHundredDays);
-
+        System.out.println("test line");
     }
 }
