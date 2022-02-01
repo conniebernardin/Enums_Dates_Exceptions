@@ -21,15 +21,17 @@ public class Exercise4 {
         LocalDate oneHundredDays = myBirthday.plusDays(100);
         System.out.println("100 days after my birthday is: " + oneHundredDays);
 
-        //HOW DO I INVOKE THE METHOD?!
+        LocalDate giveBirthday = LocalDate.of(1999, 12, 14);
+        calculateAge(giveBirthday);
 
+        //HOW DO I INVOKE THE METHOD?! create new instance
     }
     // write a method that calculate age on any given date
-    private int calculateAge(LocalDate date){
-        LocalDate birthday = LocalDate.of(1999, 12, 14);
-        LocalDate given = LocalDate.of(2022, 01, 31);
+    private static int calculateAge(LocalDate giveBirthday){
+//        birthday = LocalDate.of(giveBirthday);
+        LocalDate today = LocalDate.now();
 
-        Period p = Period.between(birthday, given);
+        Period p = Period.between(giveBirthday, today);
 
 //        System.out.println(p.getYears());
 //        System.out.println(p.getMonths());
